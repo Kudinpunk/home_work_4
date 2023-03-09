@@ -51,7 +51,7 @@ int [,] Sort_array (int [,] random_array)
         {
             for (int k = 0; k < random_array.GetLength(1) - 1; k++)
             {
-                if (random_array[i, k] > random_array[i, k + 1])
+                if (random_array[i, k] < random_array[i, k + 1])
                 {
                     int temp_min = random_array[i, k + 1];
                     random_array[i, k + 1] = random_array[i, k];
